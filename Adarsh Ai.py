@@ -7,7 +7,7 @@ import os
 import pywhatkit as kit
 import smtplib
 import sys
-                                # pip install pyaudio
+import pyaudio
 
 
 engine = pyttsx3.init('sapi5')
@@ -108,6 +108,9 @@ if __name__ == "__main__":
          elif 'open facebook' in query:
             webbrowser.open("facebook.com")
             
+         elif 'open whatsapp' in query:
+            webbrowser.open("whatsapp.com")
+            
         
          elif 'open instagram' in query:
             webbrowser.open("instagram.com")
@@ -124,7 +127,7 @@ if __name__ == "__main__":
             music_dir = 'E:\\Margret photo & video\\Music\\download'
             song = os.listdir(music_dir)
             print(song)
-            os.startfile(os.path.join(music_dir, song[98]))
+            os.startfile(os.path.join(music_dir, song[30]))
             
          elif 'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
@@ -162,4 +165,5 @@ if __name__ == "__main__":
          
          
          
+      
       
