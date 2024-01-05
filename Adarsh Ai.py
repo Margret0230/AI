@@ -9,7 +9,6 @@ import smtplib
 import sys
 import pyaudio
 
-
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 print(voices[1].id)
@@ -110,6 +109,18 @@ if __name__ == "__main__":
             
          elif 'open whatsapp' in query:
             webbrowser.open("whatsapp.com")
+            
+         elif 'open map' in query:
+            webbrowser.open("google map.com")
+            
+         elif 'open drive' in query:
+            webbrowser.open("google drive.com")
+            
+         elif 'open classroom' in query:
+            webbrowser.open("google classroom.com")
+            
+         elif 'open photos' in query:
+            webbrowser.open("google photos.com")
             
         
          elif 'open instagram' in query:
